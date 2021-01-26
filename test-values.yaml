@@ -1,0 +1,23 @@
+# ## anchore_values.yaml
+
+postgresql:
+  postgresPassword: foobar
+
+anchoreGlobal:
+  defaultAdminPassword: foobar
+  enableMetrics: True
+
+anchore-feeds-db:
+  postgresPassword: foobar
+
+anchore-ui-redis:
+  password: foobar
+
+anchoreEnterpriseGlobal:
+  enabled: true
+  image: docker.io/anchore/enterprise-dev:nightly
+  imagePullPolicy: Always
+
+anchoreEnterpriseUi:
+  image: docker.io/anchore/anchore-on-prem-ui-dev:nightly
+  imagePullPolicy: Always
